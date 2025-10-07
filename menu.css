@@ -7,6 +7,11 @@
     src: url("./Rufina/Rufina-Bold.ttf");
     font-weight: bold;
 }
+
+:root {
+    --footer--bg--color: #233000;
+    --footer-text-color: white;
+}
 *{
     box-sizing: border-box;
 }
@@ -37,9 +42,9 @@ body{
     white-space: nowrap;
 }
 
-/* .btn:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-} */
+.btn.clear:hover{
+    background-color: whitesmoke;
+}
 
 .btn.clear{
     background-color: rgba(0,0,0,0);
@@ -101,4 +106,206 @@ body{
     font-size: 1.7rem;
     margin-top: 2rem;
     width: 60%;
+}
+
+
+main{
+    overflow-x: hidden;
+}
+.section-heading-container{
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;   
+}
+.section-heading-container .section-title{
+    font-family: "Rufina";
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.section-heading-container .section-subtitle{
+    font-family: "Lato";
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 4rem;
+}
+.menu-container .menu-img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.menu-container .menu-options{
+    width: 50%;
+}
+.menu-container .menu-item > p{
+    font-size: 2.5rem;
+    font-family: "Rufina";
+    text-align: right;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.menu-container .menu-item .item-info{
+    border-top: 4px dotted black;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.menu-container .menu-item .item-info h3{
+    font-size: 3.6rem;
+    font-family: "Rufina";
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+.menu-container .menu-item .item-info p{
+    font-size: 1.2rem;
+    font-family: "Lato";
+    margin: 0;
+    line-height: 1.1;
+}
+
+.reservation-container{
+    background-color: #ebf0e4;
+    padding: 8rem 8rem;
+    text-align: center;
+}
+
+.reservation-container .scheduling-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 4rem;
+margin-bottom: 4rem;
+gap: 2rem;
+}
+
+.scheduling-container input,
+.scheduling-container select{
+    flex: 1;
+    height: 5rem;
+    border: 2px solid black;
+    padding: 0 2rem;
+    background-color: #ebf0e4;
+    font-size: 1.5rem;
+    font-family: "Lato";
+}
+
+.btn.primary{
+    background-color: #233000;
+    border: 1px solid black;
+    margin-top: 4rem;
+    padding: 0 4rem;
+}
+
+.btn.primary:hover{
+    background-color:#2d4000 ;
+}
+
+footer{
+    background-color: var(--footer--bg--color) ;
+    color: var(--footer-text-color) ;
+}
+
+
+.contact-container{
+    padding: 5rem 8rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.contact-container .left{
+    flex: 0 0 auto;
+}
+
+.contact-container .middle{
+    flex: 0 0 auto;
+}
+.contact-container .right{
+    flex: 1;
+    max-width: 400px;
+}
+
+.left .footer-title{
+    font-family: "Rufina";
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.contact-container .footer-subtitle{
+    font-family: "Rufina";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container .middle p{
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container .newsletter-container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}  
+
+.contact-container .newsletter-container input{
+    flex: 1;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: #233000;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    color: white;
+}
+
+.contact-container .newsletter-container input::placeholder{
+    color: #ccc;
+}
+
+.btn.secondary{
+border: none;
+background-color: #667000;
+}
+
+.btn.secondary:hover{
+    background-color: #81B957;
+}
+
+.newsletter-info{
+    font-family: "Lato";
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+.copyright-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem 5rem 8rem;
+    border-top: 2px dashed white;
+}
+
+.socials-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.socials-container img{
+    width: 2rem;
+    height: 2rem;
 }
